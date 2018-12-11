@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('shares', 'ShareController');
+
+// dashboard
+// Route::get('/dashboard','Dashboard\DashboardController@index')->name('dashboard');
+// Route::post('/','Dashboard\DashboardController@store')->name('dashboard.post');
